@@ -25,7 +25,8 @@
           <a href="./index.html" class="logo"
             ><span class="logo-accent">WEB</span>STUDIO</a
           >
-          <!-- <ul class="nav-links list">
+
+          <ul class="nav-links list">
             <li class="item">
               <a href="./index.html" class="link active">Studio</a>
             </li>
@@ -33,9 +34,9 @@
               <a href="./portfolio.html" class="link">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link">Contacts</a></li>
-          </ul> -->
+          </ul>
         </nav>
-        <!-- <address class="site-address">
+        <address class="site-address">
           <ul class="address-links list">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="link"
@@ -46,8 +47,80 @@
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </address> -->
+        </address>
+        <button class="menu-open-btn" data-menu-open type="button">
+          <svg class="menu-btn" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
+
+      <div class="hamburger-menu is-hidden" data-menu>
+        <button class="menu-close-btn" data-menu-close type="button">
+          <svg class="icon-cross" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close-btn"></use>
+          </svg>
+        </button>
+        <ul class="hamburger-menu-links list">
+          <li class="item">
+            <a class="link" href="./index.html">Studio</a>
+          </li>
+          <li class="item">
+            <a class="link" href="">Portfolio</a>
+          </li>
+          <li class="item">
+            <a class="link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="hamburger-menu-bottom">
+          <a href="tel:+110001111111" class="hamburger-menu-tel link"
+            >+11 (000) 111-11-11</a
+          >
+          <a href="mailto:info@devstudio.com" class="hamburger-menu-mail link"
+            >info@devstudio.com</a
+          >
+          <ul class="hamburger-social-list list">
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link link">
+                <svg class="menu-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <button type="button" class="menu-btn is-open">
+        <svg class="" width="32" height="32">
+          <use
+            href="./images/icons.svg#icon-modal-close-btn"
+            class="icon-cross"
+          ></use>
+          <use href="./images/icons.svg#icon-hamburger" class="icon-menu"></use>
+        </svg>
+      </button> -->
     </header>
     <main>
       <section class="hero">
@@ -61,11 +134,11 @@
           <h2 class="visually-hidden">Our mission</h2>
           <ul class="future-list list">
             <li class="item">
-              <!-- <div class="future-icon">
+              <div class="future-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="future-section-subtitle">Strategy</h3>
               <p class="section-text">
                 Our goal is to identify the business problem to walk away with
@@ -73,11 +146,11 @@
               </p>
             </li>
             <li class="item">
-              <!-- <div class="future-icon">
+              <div class="future-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="future-section-subtitle">Punctuality</h3>
               <p class="section-text">
                 Bring the key message to the brand's audience for the best price
@@ -85,11 +158,11 @@
               </p>
             </li>
             <li class="item">
-              <!-- <div class="future-icon">
+              <div class="future-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="future-section-subtitle">Diligence</h3>
               <p class="section-text">
                 Research and confirm brands that present the strongest digital
@@ -97,11 +170,11 @@
               </p>
             </li>
             <li class="item">
-              <!-- <div class="future-icon">
+              <div class="future-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-              </div> -->
+              </div>
               <h3 class="future-section-subtitle">Technologies</h3>
               <p class="section-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -424,7 +497,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -504,7 +577,8 @@
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

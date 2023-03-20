@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="icon-hamburger" viewBox="0 0 47 32">
+     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.153h42.964M1.961 15.615h42.964M1.961 2.077h42.964"></path>
+    </symbol>
     <symbol id="icon-person" viewBox="0 0 32 32">
       <path d="M16 16a5.333 5.333 0 1 0 0-10.666A5.333 5.333 0 1 0 16 16zm0 2.667c-3.561 0-10.667 1.787-10.667 5.333v1.333c0 .732.599 1.333 1.333 1.333h18.667c.732 0 1.333-.601 1.333-1.333V24c0-3.547-7.108-5.333-10.667-5.333z"/>
     </symbol>
