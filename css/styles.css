@@ -361,7 +361,6 @@ img {
 .footer-description,
 .section-text,
 .footer-social-title,
-.product-card,
 .modal-title,
 .form-label {
   margin-top: 0;
@@ -369,9 +368,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 
-  /* font-weight: 500; */
+  font-weight: 500;
 
   color: var(--body-text-color);
+}
+
+.footer-description,
+.wrapper .section-text {
+  font-weight: 400;
 }
 
 .wrapper {
@@ -609,8 +613,6 @@ footer {
 
 .footer-description {
   color: var(--accent-color);
-  font-weight: 400;
-  letter-spacing: 0.02em;
   width: 264px;
   margin: 0 auto;
 }
