@@ -146,9 +146,11 @@ img {
 }
 
 .hamburger-menu-links .link:hover,
-.hamburger-menu-links .link:focus {
-  color: var(--button-normal-color);
+.hamburger-menu-links .link:focus,
+.hamburger-menu-links .link.active {
+  color: var(--button-hover-color);
 }
+
 .hamburger-menu-bottom {
   margin-top: auto;
 }
@@ -713,7 +715,9 @@ footer {
 .modal {
   position: absolute;
   /* width: 408px;*/
-  min-height: 586px;
+  /* min-height: 586px; */
+  width: 100%;
+  height: auto;
   padding: 24px;
 
   top: 50%;
@@ -887,6 +891,19 @@ footer {
   height: 56px;
 }
 
+@media screen and (max-width: 479px) {
+  .hamburger-menu-tel {
+    font-size: 26px;
+  }
+
+  .hamburger-social-list {
+    gap: 24px;
+  }
+
+  .hero-title {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -917,6 +934,10 @@ footer {
 
   .modal {
     width: 392px;
+  }
+
+  .hero-title {
+    width: 320px;
   }
 }
 
@@ -1075,6 +1096,10 @@ footer {
     margin-bottom: 72px;
   }
 
+  .footer-social {
+    margin-bottom: 0;
+  }
+
   .footer-description {
     margin-right: 24px;
   }
@@ -1097,7 +1122,12 @@ footer {
   .team-list .item:not(:last-child) {
     margin-bottom: 0px;
   }
+
+  .modal {
+    width: 408px;
+  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .future-list {
     display: flex;
@@ -1150,6 +1180,7 @@ footer {
   }
 
   .hero {
+    max-width: 1440px;
     padding: 188px 0;
   }
 
