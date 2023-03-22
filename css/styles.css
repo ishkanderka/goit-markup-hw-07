@@ -361,6 +361,7 @@ img {
 .footer-description,
 .section-text,
 .footer-social-title,
+.product-card,
 .modal-title,
 .form-label {
   margin-top: 0;
@@ -374,6 +375,7 @@ img {
 }
 
 .footer-description,
+.product-card,
 .wrapper .section-text {
   font-weight: 400;
 }
